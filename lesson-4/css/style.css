@@ -1,0 +1,82 @@
+@import url('reset.css');
+
+p {
+  color: red;
+}
+h2 {
+  color: blue;
+}
+.list {
+  color: brown;
+}
+.item {
+  color: blue;
+}
+.block .text1 p {
+  color: yellow;
+}
+.block p span {
+  color: aqua;
+}
+img + p {
+  color: red;
+}
+.text > p {
+  color: blueviolet;
+}
+.test-rating {
+}
+.list-two {
+}
+.item-two {
+}
+
+.block .text {
+  color: brown;
+}
+.text.text2 div {
+  color: yellow;
+}
+h1 {
+  color: antiquewhite;
+}
+
+.list {
+  color: aqua;
+}
+h2 {
+  color: bisque;
+}
+
+h3 {
+  color: blue;
+}
+footer {
+  color: greenyellow;
+}
+a {
+  color: black;
+}
+.text a {
+  color: blue;
+}
+
+li {
+  color: red;
+}
+
+.list li a {
+  color: brown;
+}
+
+.text ~ p {
+  color: red;
+}
+
+[class*='text'] {
+  color: blue;
+}
+
+/* * {
+  color: aquamarine !important;
+} */
