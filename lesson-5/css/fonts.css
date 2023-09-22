@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'Causten';
+  src: url('../fonts/Causten-Light.woff2') format('woff2');
+  src: url('../fonts/Causten-Light.woff') format('woff');
+  font-display: swap;
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Causten';
+  src: url('../fonts/Causten-Regular.woff2') format('woff2');
+  src: url('../fonts/Causten-Regular.woff') format('woff');
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Causten';
+  src: url('../fonts/Causten-Bold.woff2') format('woff2');
+  src: url('../fonts/Causten-Bold.woff2') format('woff');
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Glassure';
+  src: url('../fonts/Glassure.woff2') format('woff2');
+  src: url('../fonts/Glassure.woff') format('woff');
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+}
