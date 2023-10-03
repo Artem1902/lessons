@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@400;700&display=swap');
+@import url('reset.css');
+
+body {
+  font-family: 'Inter' sans-serif;
+  font-size: 18px;
+}
+.header {
+  padding: 20px 15px 20px;
+  max-width: 1248px;
+  margin: 0 auto;
+}
+.listNav {
+  text-align: center;
+  padding: 50px 0;
+}
+.listNav li {
+  display: inline-block;
+  margin: 0 25px;
+  font-size: 24px;
+  color: blueviolet;
+}
+.listNav .up {
+  color: chocolate;
+}
+h1 {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 36px;
+  color: cornflowerblue;
+}
+.template {
+  max-width: 200px;
+  margin: 0 auto 16px;
+  text-align: center;
+}
+.template p {
+  color: #37393f;
+  font-weight: 500;
+  text-align: center;
+  text-transform: capitalize;
+  display: inline-block;
+}
+.template div {
+  width: 12px;
+  height: 12px;
+  background-color: #40ddb6;
+  display: inline-block;
+}
+.licencing {
+  padding: 100px 15px 150.5px;
+  max-width: 1248px;
+  margin: 0 auto;
+}
+.icons,
+.photo {
+  margin-bottom: 100px;
+}
+
+.icons p,
+.photo p {
+  color: #7d7d7d;
+  line-height: 1.46;
+  margin-bottom: 32px;
+}
+.photo h4 {
+  margin-bottom: 8px;
+}
+.photo p {
+  margin-bottom: 24px;
+}
+h2,
+h3,
+h4 {
+  color: #37393f;
+  font-family: 'Poppins', serif;
+  font-weight: 700;
+  line-height: 1.21;
+  text-transform: capitalize;
+}
+h2 {
+  text-align: center;
+  font-size: 60px;
+  margin-bottom: 70px;
+}
+h3 {
+  font-size: 40px;
+  margin-bottom: 11px;
+}
+h4 {
+  line-height: 1;
+  font-size: 30px;
+}
+h4 span {
+  font-weight: 400;
+}
+
+.licencing .green {
+  color: #40ddb6;
+}
