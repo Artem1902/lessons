@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@600&display=swap");
+@import url("reset.css");
+
+.why {
+  padding: 37px 50px 45px;
+  margin: 0 auto;
+  font-family: "Inter", serif;
+  font-size: 18px;
+  color: #7d7d7d;
+  max-width: 792px;
+}
+.why h2 {
+  color: #37393f;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.27;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+.why p {
+  line-height: 1.46;
+  text-align: justify;
+}
+.why-us {
+  margin-bottom: 42px;
+}
+.why-blue {
+  margin-bottom: 40px;
+}
+.why .blue {
+  color: #6b77e5;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 127%;
+  margin-bottom: 12px;
+  text-align: left;
+}
+.why-benefits {
+  margin-bottom: 50px;
+}
+.why-benefits-body {
+  display: inline-block;
+}
