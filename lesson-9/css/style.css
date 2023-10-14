@@ -1,18 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@700&display=swap");
-@import url("reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@700&display=swap');
+@import url('reset.css');
 
 .why {
   padding: 37px 50px 45px;
   margin: 0 auto;
-  font-family: "Inter", serif;
+  font-family: 'Inter', serif;
   font-size: 18px;
   color: #7d7d7d;
   max-width: 792px;
 }
 .why h2 {
   color: #37393f;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 30px;
   font-weight: 600;
   line-height: 1.27;
@@ -31,7 +31,7 @@
 }
 .why .blue {
   color: #6b77e5;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -54,7 +54,7 @@
 .why-benefits-body h3,
 .why-benefits-body h4 {
   color: #37393f;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 25px;
   line-height: 1.27;
   margin-bottom: 15px;
@@ -70,14 +70,15 @@
   margin-bottom: 30px;
   min-height: 27px;
 }
+
 .why-benefits-body li:last-child {
   margin-bottom: 0;
 }
 
 .why-benefits-body li::before {
-  content: "";
+  content: '';
   display: inline-block;
-  background: url("../img/vector.png") center no-repeat;
+  background: url('../img/vector.png') center no-repeat;
   width: 27px;
   height: 27px;
   margin-right: 8px;
@@ -91,7 +92,7 @@
   padding: 15px;
   margin: 50px auto;
   color: #7d7d7d;
-  font-family: "Inter", serif;
+  font-family: 'Inter', serif;
   font-size: 18px;
 }
 .we-care h4 {
@@ -101,7 +102,7 @@
   text-transform: capitalize;
 }
 .we-care h4::before {
-  content: "";
+  content: '';
   display: inline-block;
   width: 12px;
   height: 12px;
@@ -110,7 +111,7 @@
 }
 .we-care h2 {
   color: #37393f;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 40px;
   font-weight: 700;
   line-height: 1.21;
@@ -138,10 +139,14 @@
 .we-care-mision {
   padding: 28px 41px 28px 38px;
 }
+.we-care-vision:hover,
+.we-care-mision:hover {
+  outline: 3px solid #e3e3e3;
+}
 .we-care-vision h3,
 .we-care-mision h3 {
   color: #37393f;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 12px;
@@ -155,10 +160,10 @@
 .we-care-vision h3::before,
 .we-care-mision h3::before {
   display: inline-block;
-  content: "";
+  content: '';
   width: 27px;
   height: 27px;
-  background: url("../img/vector.png") no-repeat;
+  background: url('../img/vector.png') no-repeat;
   margin-right: 19px;
   margin-bottom: -5px;
 }
@@ -175,13 +180,17 @@
   font-weight: 600;
   text-transform: capitalize;
 }
+.more a:hover {
+  color: aquamarine;
+  font-size: 20px;
+}
 
 /* ================================================= */
 .how-we {
   max-width: 1950px;
   padding: 15px;
   margin: 0 auto;
-  font-family: "Inter", serif;
+  font-family: 'Inter', serif;
   font-size: 18px;
   color: #7d7d7d;
   text-align: center;
@@ -195,7 +204,7 @@
   text-align: center;
 }
 .how-we h4::before {
-  content: "";
+  content: '';
   display: inline-block;
   width: 12px;
   height: 12px;
@@ -204,7 +213,7 @@
 }
 .how-we h2 {
   color: #37393f;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 40px;
   font-weight: 700;
   line-height: 1.21;
@@ -262,7 +271,7 @@
 .how-we-enjoy h3 {
   color: #37393f;
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 25px;
   font-weight: 600;
   line-height: 1.27;
@@ -270,27 +279,27 @@
 }
 
 .how-we-make h3::before {
-  content: "";
+  content: '';
   display: block;
   width: 72px;
   height: 72px;
-  background: url("../img/icon1.png");
+  background: url('../img/icon1.png');
   margin: -95px auto 38px;
 }
 .how-we-consult h3::before {
-  content: "";
+  content: '';
   display: block;
   width: 72px;
   height: 72px;
-  background: url("../img/icon2.png");
+  background: url('../img/icon2.png');
   margin: -95px auto 38px;
 }
 .how-we-enjoy h3::before {
-  content: "";
+  content: '';
   display: block;
   width: 72px;
   height: 72px;
-  background: url("../img/icon3.png");
+  background: url('../img/icon3.png');
   margin: -95px auto 38px;
 }
 .how-we-make {
@@ -306,7 +315,7 @@
   padding: 15px;
   margin: 50px auto;
   color: #000;
-  font-family: "Cormorant Infant", sans-serif;
+  font-family: 'Cormorant Infant', sans-serif;
   font-weight: 700;
   font-size: 0;
 }
@@ -325,7 +334,7 @@
   line-height: 1.15;
 }
 .jewels-text h2::after {
-  content: "";
+  content: '';
   display: block;
   height: 2px;
   width: 65%;
@@ -370,7 +379,15 @@
 }
 
 /* ====================================================== */
-
+.title {
+  color: #37393f;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.27;
+  margin-bottom: 10px;
+  text-align: center;
+}
 .game {
   width: 600px;
   height: 600px;
@@ -382,7 +399,6 @@
   width: 50px;
   height: 50px;
   background-color: #7d7d7d;
-  visibility: hidden;
 }
 .line2 {
   width: 150px;
@@ -391,9 +407,56 @@
   visibility: hidden;
 }
 
-.line1:hover {
+.line1:hover + .line2,
+.line2:hover {
   visibility: visible;
 }
-.line2:hover {
+
+.line3 {
+  width: 50px;
+  height: 200px;
+  background-color: #7d7d7d;
+  visibility: hidden;
+  margin-left: 100px;
+}
+.line2:hover + .line3,
+.line3:hover {
+  visibility: visible;
+}
+
+.line4 {
+  width: 200px;
+  height: 50px;
+  background-color: #7d7d7d;
+  visibility: hidden;
+  margin-left: 100px;
+}
+
+.line3:hover + .line4,
+.line4:hover {
+  visibility: visible;
+}
+
+.line5 {
+  height: 200px;
+  width: 50px;
+  background-color: #7d7d7d;
+  visibility: hidden;
+  margin-left: 250px;
+}
+.line4:hover + .line5,
+.line5:hover {
+  visibility: visible;
+}
+
+.line6 {
+  width: 350px;
+  height: 50px;
+  background-color: #7d7d7d;
+  visibility: hidden;
+  margin-left: 250px;
+}
+.line5:hover + .line6,
+.line6:hover {
   visibility: visible;
 }
