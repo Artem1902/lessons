@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@700&display=swap");
 @import url("reset.css");
 
 .why {
@@ -40,7 +41,359 @@
 }
 .why-benefits {
   margin-bottom: 50px;
+  font-size: 0;
+}
+.why-benefits img {
+  width: 332px;
 }
 .why-benefits-body {
   display: inline-block;
+  width: 325px;
+  margin-left: 29px;
+}
+.why-benefits-body h3,
+.why-benefits-body h4 {
+  color: #37393f;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  line-height: 1.27;
+  margin-bottom: 15px;
+}
+.why-benefits-body h4 {
+  color: #40ddb6;
+  font-size: 20px;
+  margin-bottom: 21px;
+}
+.why-benefits-body li {
+  line-height: 1.2;
+  font-size: 18px;
+  margin-bottom: 30px;
+  min-height: 27px;
+}
+.why-benefits-body li:last-child {
+  margin-bottom: 0;
+}
+
+.why-benefits-body li::before {
+  content: "";
+  display: inline-block;
+  background: url("../img/vector.png") center no-repeat;
+  width: 27px;
+  height: 27px;
+  margin-right: 8px;
+  margin-bottom: -5px;
+}
+
+/* ===========================WE-CARE=========================== */
+
+.we-care {
+  max-width: 703px;
+  padding: 15px;
+  margin: 50px auto;
+  color: #7d7d7d;
+  font-family: "Inter", serif;
+  font-size: 18px;
+}
+.we-care h4 {
+  color: #37393f;
+  font-weight: 500;
+  margin-bottom: 16px;
+  text-transform: capitalize;
+}
+.we-care h4::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: #40ddb6;
+  margin-right: 6px;
+}
+.we-care h2 {
+  color: #37393f;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.21;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+.we-care-text > *:not(:last-child) {
+  margin-bottom: 16px;
+}
+.we-care-text p {
+  line-height: 1.46;
+}
+.we-care-text {
+  margin-bottom: 48px;
+}
+.we-care-vision {
+  margin-bottom: 31px;
+  border: 1px solid #e3e3e3;
+}
+.we-care-mision {
+  margin-bottom: 48px;
+  border: 1px solid #e3e3e3;
+}
+.we-care-vision,
+.we-care-mision {
+  padding: 28px 41px 28px 38px;
+}
+.we-care-vision h3,
+.we-care-mision h3 {
+  color: #37393f;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  text-transform: capitalize;
+}
+.we-care-vision p,
+.we-care-mision p {
+  line-height: 1.46;
+  padding-left: 46px;
+}
+.we-care-vision h3::before,
+.we-care-mision h3::before {
+  display: inline-block;
+  content: "";
+  width: 27px;
+  height: 27px;
+  background: url("../img/vector.png") no-repeat;
+  margin-right: 19px;
+  margin-bottom: -5px;
+}
+.more {
+  padding: 21px 35px 22px 35px;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+  background: #6b77e5;
+}
+.more a {
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+/* ================================================= */
+.how-we {
+  max-width: 1950px;
+  padding: 15px;
+  margin: 0 auto;
+  font-family: "Inter", serif;
+  font-size: 18px;
+  color: #7d7d7d;
+  text-align: center;
+}
+
+.how-we h4 {
+  color: #37393f;
+  font-weight: 500;
+  margin-bottom: 16px;
+  text-transform: capitalize;
+  text-align: center;
+}
+.how-we h4::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: #40ddb6;
+  margin-right: 6px;
+}
+.how-we h2 {
+  color: #37393f;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.21;
+  margin-bottom: 77px;
+  text-transform: capitalize;
+  text-align: center;
+}
+.how-we-conteiner {
+  font-size: 0;
+  margin-bottom: 20px;
+}
+.how-we-make,
+.how-we-consult,
+.how-we-enjoy {
+  display: inline-block;
+  max-width: 386px;
+  min-height: 301px;
+  padding: 58px 43px;
+  background: #f4f4f4;
+  font-size: 18px;
+}
+.how-we-make p,
+.how-we-consult p,
+.how-we-enjoy p {
+  line-height: 1.46;
+  margin-bottom: 37px;
+  text-align: center;
+}
+.how-we-make a,
+.how-we-consult a,
+.how-we-enjoy a {
+  color: #6b77e5;
+  text-align: center;
+  font-weight: 600;
+  text-transform: capitalize;
+  display: block;
+}
+.how-we-make a:hover,
+.how-we-consult a:hover,
+.how-we-enjoy a:hover {
+  color: #40ddb6;
+}
+.how-we-make a:active,
+.how-we-consult a:active,
+.how-we-enjoy a:active {
+  color: red;
+}
+.how-we-make a:visited,
+.how-we-consult a:visited,
+.how-we-enjoy a:visited {
+  color: gray;
+}
+.how-we-make h3,
+.how-we-consult h3,
+.how-we-enjoy h3 {
+  color: #37393f;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.27;
+  margin-bottom: 16px;
+}
+
+.how-we-make h3::before {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 72px;
+  background: url("../img/icon1.png");
+  margin: -95px auto 38px;
+}
+.how-we-consult h3::before {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 72px;
+  background: url("../img/icon2.png");
+  margin: -95px auto 38px;
+}
+.how-we-enjoy h3::before {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 72px;
+  background: url("../img/icon3.png");
+  margin: -95px auto 38px;
+}
+.how-we-make {
+  margin-right: 31px;
+}
+.how-we-consult {
+  margin-right: 31px;
+}
+/* ==================================================== */
+
+.jewels {
+  max-width: 1330px;
+  padding: 15px;
+  margin: 50px auto;
+  color: #000;
+  font-family: "Cormorant Infant", sans-serif;
+  font-weight: 700;
+  font-size: 0;
+}
+.jewels-text,
+.jewels-img1,
+.jewels-img2 {
+  display: inline-block;
+  vertical-align: top;
+}
+.jewels-text {
+  padding-top: 150px;
+  max-width: 488px;
+}
+.jewels-text h2 {
+  font-size: 60px;
+  line-height: 1.15;
+}
+.jewels-text h2::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 65%;
+  background: #78473b;
+  margin-top: 13px;
+}
+.jewels-img1 {
+  padding-top: 40px;
+  margin-right: 45px;
+}
+.jewels-img1 img,
+.jewels-img2 img {
+  width: 381px;
+  margin: 9px -10px -9px 10px;
+}
+.jewels-img1 p,
+.jewels-img2 p {
+  font-size: 24px;
+  line-height: 1.4;
+  margin-bottom: 4px;
+}
+.jewels-img1 p:hover,
+.jewels-img2 p:hover {
+  color: #6b77e5;
+}
+.jewels-img1 p:active,
+.jewels-img2 p:active {
+  color: blueviolet;
+}
+.jewels-img1 p:last-child,
+.jewels-img2 p:last-child {
+  margin-bottom: 0;
+}
+.jewels-img2 h3 {
+  font-size: 46px;
+  line-height: 1.13;
+  margin-bottom: 40px;
+}
+.jewels-border {
+  border: 1px solid #000;
+  margin-bottom: 34px;
+}
+
+/* ====================================================== */
+
+.game {
+  width: 600px;
+  height: 600px;
+  border: 2px solid black;
+  margin: 50px auto;
+}
+
+.line1 {
+  width: 50px;
+  height: 50px;
+  background-color: #7d7d7d;
+  visibility: hidden;
+}
+.line2 {
+  width: 150px;
+  height: 50px;
+  background-color: #7d7d7d;
+  visibility: hidden;
+}
+
+.line1:hover {
+  visibility: visible;
+}
+.line2:hover {
+  visibility: visible;
 }
