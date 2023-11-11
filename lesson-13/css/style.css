@@ -246,7 +246,7 @@ body {
 }
 .translate {
   display: inline-block;
-  margin: 10px 50px;
+  margin: 30px 50px;
   vertical-align: top;
 }
 .back {
@@ -265,7 +265,7 @@ body {
 }
 .scale {
   display: inline-block;
-  margin: 10px 50px;
+  margin: 30px 50px;
   vertical-align: top;
 }
 .scale__item:hover {
@@ -273,7 +273,7 @@ body {
 }
 .mirror {
   display: inline-block;
-  margin: 10px 50px;
+  margin: 30px 50px;
   vertical-align: top;
 }
 .mirror__item {
@@ -284,7 +284,7 @@ body {
 }
 .rotate {
   display: inline-block;
-  margin: 10px 50px;
+  margin: 30px 50px;
   vertical-align: top;
 }
 
@@ -340,6 +340,7 @@ body {
   height: 200px;
   position: relative;
   perspective: 500px;
+  color: aliceblue;
 }
 .flip__back {
   position: absolute;
@@ -348,8 +349,9 @@ body {
   width: 100%;
   height: 100%;
   transition: all 0.4s;
-  background-color: rgb(225, 132, 18);
+  background-color: lightcoral;
   transform: rotateX(-180deg);
+  padding: 20px;
 }
 .flip__front {
   position: absolute;
@@ -358,9 +360,10 @@ body {
   width: 100%;
   height: 100%;
   transition: all 0.4s;
-  background-color: chartreuse;
+  background-color: dimgrey;
   transform: rotateX(0deg);
   backface-visibility: hidden;
+  padding: 20px;
 }
 .flip__body:hover .flip__back {
   transform: rotateX(0deg);
@@ -369,6 +372,6 @@ body {
   transform: rotateX(180deg);
 }
 .footer {
+  padding: 20px;
   text-align: center;
-  background-color: rgb(241, 250, 215);
 }
