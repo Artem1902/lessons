@@ -1,0 +1,698 @@
+@import url('reset.css');
+body {
+  background-color: darkslateblue;
+  color: aliceblue;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+  padding: 30px;
+}
+
+.title {
+  text-align: center;
+  font-size: 20px;
+}
+.block {
+  width: 200px;
+  height: 200px;
+  background-color: darkgreen;
+  padding: 20px;
+  text-align: center;
+  margin: 30px;
+}
+[class*='__container'] {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 15px 0 15px;
+}
+.header__title {
+  color: coral;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.main__training {
+  text-align: center;
+}
+.duration,
+.property,
+.delay {
+  display: inline-block;
+}
+
+.duration__block {
+  transition-duration: 0.5s;
+}
+.duration__block:hover {
+  background-color: goldenrod;
+}
+
+.property__block {
+  transition-duration: 1s;
+  transition-property: width, height;
+}
+.property:hover .property__block {
+  width: 300px;
+  height: 300px;
+  background-color: goldenrod;
+}
+
+.delay__block {
+  transition-delay: 1s;
+  transition-duration: 0.5s;
+}
+.delay__block:hover {
+  background-color: goldenrod;
+}
+
+.list__item {
+  transform: translate(-100%, 0px);
+  transition-duration: 1s;
+}
+.list__item:nth-child(1) {
+  transition-delay: 0s;
+}
+.list__item:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.list__item:nth-child(3) {
+  transition-delay: 0.4s;
+}
+.list__item:nth-child(4) {
+  transition-delay: 0.6s;
+}
+.list__item:nth-child(5) {
+  transition-delay: 0.8s;
+}
+.list:hover .list__item {
+  transition-duration: 1s;
+  transform: translate(50px, 100px);
+}
+.list__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.timing__block {
+  transition-duration: 0.5s;
+  /* transition-timing-function: ease; */
+  /* transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); */
+  transition-timing-function: steps(4, start);
+}
+.timing__block:hover {
+  width: 90%;
+  background-color: goldenrod;
+}
+
+.frame__block {
+  position: relative;
+  animation-name: run;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+.frame__block:hover {
+  animation-play-state: paused;
+}
+
+/* ============================================== */
+
+.main__car {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  margin: 0 auto 50px;
+}
+.building__back {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 365px;
+  right: -20px;
+  bottom: 2px;
+  border: 2px solid gray;
+  transform: skew(0, 340deg);
+  transform-origin: bottom;
+  background-color: rgb(124, 122, 122);
+}
+.building__roof {
+  position: absolute;
+  content: '';
+  width: 320px;
+  height: 90px;
+  right: -10px;
+  top: 125px;
+  border: 1px solid black;
+  transform: skew(-20deg, 0);
+  background-color: rgb(81, 5, 5);
+  z-index: 5;
+}
+
+.building__body {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  content: '';
+  right: 0;
+  bottom: 0;
+  border: 2px solid gray;
+  background-color: rgb(124, 122, 122);
+  z-index: 2;
+}
+.building__left-window {
+  position: absolute;
+  content: '';
+  width: 80px;
+  height: 80px;
+  right: 30px;
+  top: 30px;
+  border: 5px solid white;
+  background-color: black;
+  animation-name: lights;
+  animation-delay: 10s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.building__left-window::before {
+  position: absolute;
+  content: '';
+  width: 3px;
+  height: 70px;
+  right: 30px;
+  top: 0px;
+  border: 3px solid white;
+}
+.building__left-window::after {
+  position: absolute;
+  content: '';
+  width: 35px;
+  height: 3px;
+  right: 0px;
+  top: 25px;
+  border: 3px solid white;
+}
+.building__right-window::before {
+  position: absolute;
+  content: '';
+  width: 3px;
+  height: 70px;
+  right: 30px;
+  top: 0px;
+  border: 3px solid white;
+}
+.building__right-window::after {
+  position: absolute;
+  content: '';
+  width: 35px;
+  height: 3px;
+  right: 0px;
+  top: 25px;
+  border: 3px solid white;
+}
+@keyframes lights {
+  100% {
+    background-color: rgb(205, 232, 74);
+  }
+}
+.building__right-window {
+  position: absolute;
+  content: '';
+  width: 80px;
+  height: 80px;
+  right: 180px;
+  top: 30px;
+  background-color: black;
+  border: 5px solid white;
+  animation-name: lights;
+  animation-delay: 10s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.building__hood {
+  position: absolute;
+  content: '';
+  width: 180px;
+  height: 15px;
+  right: 105px;
+  bottom: 115px;
+  border: 2px solid transparent;
+  border-radius: 200px 200px 0 0;
+  background-color: rgb(81, 5, 5);
+  z-index: 5;
+}
+@keyframes gate {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 100%;
+  }
+}
+.building__gate {
+  position: absolute;
+  content: '';
+  width: 160px;
+  height: 120px;
+  right: 115px;
+  bottom: 0;
+  border: 2px solid black;
+  background-color: rgb(205, 232, 74);
+  overflow: hidden;
+  z-index: 4;
+}
+.building__gate::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 156px;
+  height: 120px;
+  animation-name: gate;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  background-color: rgb(68, 67, 45);
+  animation-fill-mode: forwards;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+  z-index: 6;
+}
+
+.building__visor {
+  position: absolute;
+  content: '';
+  width: 80px;
+  height: 15px;
+  right: 15px;
+  bottom: 115px;
+  border: 2px solid transparent;
+  border-radius: 200px 200px 0 0;
+  background-color: rgb(81, 5, 5);
+  z-index: 2;
+}
+.building__door {
+  position: absolute;
+  content: '';
+  width: 50px;
+  height: 100px;
+  right: 30px;
+  bottom: 20px;
+  border: 2px solid rgb(77, 36, 6);
+  background-color: saddlebrown;
+}
+.building__door::before {
+  position: absolute;
+  content: '';
+  width: 5px;
+  height: 5px;
+  right: 5px;
+  bottom: 40px;
+  border-radius: 50%;
+  background-color: rgb(46, 21, 3);
+}
+.building__porch1 {
+  position: absolute;
+  content: '';
+  width: 70px;
+  height: 10px;
+  right: 20px;
+  bottom: 10px;
+  border: 2px solid transparent;
+  background-color: rgb(69, 67, 67);
+}
+.building__porch2 {
+  position: absolute;
+  content: '';
+  width: 80px;
+  height: 10px;
+  right: 15px;
+  bottom: 0px;
+  border: 2px solid transparent;
+  background-color: rgb(69, 67, 67);
+}
+
+@keyframes go {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 66%;
+  }
+}
+@keyframes disapear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.auto {
+  position: absolute;
+  width: 150px;
+  height: 80px;
+  bottom: 0;
+  left: 20px;
+
+  animation: go 5s linear 2s forwards, disapear 1s linear 7s forwards;
+
+  animation-fill-mode: forwards;
+  z-index: 3;
+}
+.auto__top {
+  position: absolute;
+  width: 65px;
+  height: 20px;
+  outline: 4px solid chocolate;
+  border: 1px solid black;
+  border-radius: 100px 200px 0 0;
+  top: 10px;
+  left: 40px;
+  background-color: darkgray;
+}
+.auto__top::before {
+  position: absolute;
+  content: '';
+  width: 5px;
+  height: 30px;
+  top: 0;
+  left: 30px;
+  background-color: chocolate;
+}
+.auto__middle {
+  position: absolute;
+  width: 150px;
+  height: 35px;
+  border: 1px solid transparent;
+  border-radius: 100px 150px 30px 20px;
+  top: 30px;
+  left: 0px;
+  background-color: chocolate;
+}
+.auto__middle::before {
+  position: absolute;
+  content: '';
+  width: 7px;
+  height: 15px;
+  border: 1px solid black;
+  top: 5px;
+  left: 0;
+  border-radius: 20px 10px 10px 0px;
+  background-color: red;
+}
+.auto__middle::after {
+  position: absolute;
+  content: '';
+  width: 7px;
+  height: 15px;
+  border: 1px solid black;
+  top: 5px;
+  right: 4px;
+  border-radius: 10px 30px 10px 10px;
+  background-color: orange;
+}
+.auto__door-left {
+  position: absolute;
+  content: '';
+  height: 30px;
+  width: 35px;
+  top: 2px;
+  left: 35px;
+  border: 1px solid black;
+  border-radius: 5px 5px 5px 5px;
+}
+.auto__door-left::before {
+  position: absolute;
+  content: '';
+  width: 5px;
+  height: 3px;
+  border: 1px solid black;
+  top: 5px;
+  left: 5px;
+  background-color: black;
+}
+.auto__door-right {
+  position: absolute;
+  content: '';
+  height: 30px;
+  width: 35px;
+  top: 2px;
+  left: 72px;
+  border: 1px solid black;
+  border-radius: 5px 5px 5px 5px;
+}
+.auto__door-right::before {
+  position: absolute;
+  content: '';
+  width: 5px;
+  height: 3px;
+  border: 1px solid black;
+  top: 5px;
+  left: 5px;
+  background-color: black;
+}
+
+.wills__left {
+  position: absolute;
+  content: '';
+  border: 7px solid black;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  bottom: 0;
+  left: 20px;
+  background-color: blanchedalmond;
+}
+@keyframes weel {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.wills__left::before {
+  position: absolute;
+  content: '';
+  left: 0.5px;
+  top: 0.5px;
+  border: 2px dashed grey;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  animation: weel 5s linear 2s forwards;
+}
+
+.wills__left::after {
+  position: absolute;
+  content: '';
+  left: calc(50% - 2.5px);
+  top: calc(50% - 2.5px);
+  border: 1px solid black;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: crimson;
+}
+.wills__right {
+  position: absolute;
+  content: '';
+  border: 7px solid black;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  bottom: 0;
+  left: 100px;
+  background-color: blanchedalmond;
+}
+.wills__right::before {
+  position: absolute;
+  content: '';
+  left: 0.5px;
+  top: 0.5px;
+  border: 2px dashed grey;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  animation: weel 5s linear 2s forwards;
+}
+.wills__right::after {
+  position: absolute;
+  content: '';
+  left: calc(50% - 2.5px);
+  top: calc(50% - 2.5px);
+  border: 1px solid black;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: crimson;
+}
+.road {
+  position: absolute;
+  content: '';
+  background-color: darkgrey;
+  height: 10px;
+  width: 800px;
+  bottom: -3px;
+  left: 0;
+}
+@keyframes moon {
+  0% {
+    left: -100px;
+  }
+  100% {
+    left: -20px;
+  }
+}
+.sky__moon {
+  position: absolute;
+  content: '';
+  width: 80px;
+  height: 80px;
+  top: 50px;
+  left: 100px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px rgb(196, 196, 11);
+  background-color: rgb(196, 196, 11);
+}
+.sky__moon::before {
+  position: absolute;
+  content: '';
+  height: 80px;
+  width: 80px;
+  top: 0px;
+  left: -100px;
+  background-color: darkslateblue;
+  animation-name: moon;
+  animation-duration: 10s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  border-radius: 50%;
+}
+@keyframes shadow {
+  0% {
+    box-shadow: 0px 5px 30px rgb(196, 196, 11);
+  }
+  50% {
+    box-shadow: 20px 00px 15px rgb(196, 196, 11);
+  }
+  100% {
+    box-shadow: 30px 0px 5px rgb(196, 196, 11);
+  }
+}
+.sky__star--1 {
+  position: absolute;
+  content: '';
+  width: 15px;
+  height: 15px;
+  top: 10px;
+  left: 70px;
+  /* border: 5px dashed darkslateblue; */
+  border-radius: 50%;
+  background-color: transparent;
+  animation-name: shadow;
+  animation-delay: 1s;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+}
+.sky__star--2 {
+  position: absolute;
+  content: '';
+  width: 15px;
+  height: 15px;
+  top: 0px;
+  left: 200px;
+  /* border: 5px dashed darkslateblue; */
+  border-radius: 50%;
+  background-color: transparent;
+  animation-name: shadow;
+  animation-delay: 1s;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+}
+.sky__star--3 {
+  position: absolute;
+  content: '';
+  width: 15px;
+  height: 15px;
+  top: 70px;
+  left: 360px;
+  /* border: 5px dashed darkslateblue; */
+  border-radius: 50%;
+  background-color: transparent;
+  animation-name: shadow;
+  animation-delay: 1s;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+}
+.sky__star--4 {
+  position: absolute;
+  content: '';
+  width: 15px;
+  height: 15px;
+  top: 40px;
+  left: 520px;
+  /* border: 5px dashed darkslateblue; */
+  border-radius: 50%;
+  background-color: transparent;
+  animation-name: shadow;
+  animation-delay: 1s;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+}
+.sky__star--5 {
+  position: absolute;
+  content: '';
+  width: 15px;
+  height: 15px;
+  top: 25px;
+  left: 720px;
+  /* border: 5px dashed darkslateblue; */
+  border-radius: 50%;
+  background-color: transparent;
+  animation-name: shadow;
+  animation-delay: 1s;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+}
+.sky__star--6 {
+  position: absolute;
+  content: '';
+  width: 15px;
+  height: 15px;
+  top: 0px;
+  left: 0px;
+  /* border: 5px dashed darkslateblue; */
+  border-radius: 50%;
+  background-color: transparent;
+  animation-name: shadow;
+  animation-delay: 1s;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+}
+.sky__star--7 {
+  position: absolute;
+  content: '';
+  width: 15px;
+  height: 15px;
+  top: 2px;
+  left: 750px;
+  /* border: 5px dashed darkslateblue; */
+  border-radius: 50%;
+  background-color: transparent;
+  animation-name: shadow;
+  animation-delay: 1s;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+}
+
+.footer {
+  padding: 20px;
+}
