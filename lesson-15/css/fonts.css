@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@400;700&display=swap');
+@font-face {
+  font-family: 'Causten';
+  src: url(../fonts/Causten-Light.woff2) format('woff2'),
+    url(../fonts/Causten-Light.woff) format('woff');
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Causten';
+  src: url(../fonts/Causten-Regular.woff2) format('woff2'),
+    url(../fonts/Causten-Regular.woff) format('woff');
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Causten';
+  src: url(../fonts/Causten-SemiBold.woff2) format('woff2'),
+    url(../fonts/Causten-SemiBold.woff) format('woff');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Causten';
+  src: url(../fonts/Causten-Bold.woff2) format('woff2'),
+    url(../fonts/Causten-Bold.woff) format('woff');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Core-Sans';
+  src: url('../fonts/Fontspring-coresansar65.woff2') format('woff2'),
+    url('../fonts/Fontspring-coresansar65.woff') format('woff');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Core-Sans';
+  src: url('../fonts/Fontspring-coresansar85.woff2') format('woff2'),
+    url('../fonts/Fontspring-coresansar85.woff') format('woff');
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+}
