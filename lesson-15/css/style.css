@@ -97,9 +97,13 @@ body {
 }
 .header__item {
   padding: 10px 0;
+  width: 200px;
 }
 .header__link {
   color: #333;
+}
+.header__link:hover {
+  text-decoration: underline;
 }
 
 .header__registr {
