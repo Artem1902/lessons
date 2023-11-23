@@ -11,75 +11,145 @@
 <body>
  <div class="wrapper">
   <header class="header">
-   <h1 class="header__title">Homework 16</h1>
+   <div class="header__container">
+    <h1 class="header__title">Homework 16</h1>
+   </div>
   </header>
   <main class="page">
-   <div class="page__info info-page">
-    <div class="info-page__title">My Info</div>
-    <div class="info-page__sub-title">Add Address</div>
-    <form class="info-page__form form-info" enctype="multipart/form-data" method="GET" action="#">
-     <div class="form-info__body">
-      <div class="form-info__item">
-       <label for="name">First Name*</label>
-       <input type="text" id="name" name="name" placeholder="First Name" autocomplete="on">
+   <div class="page__container">
+    <div class="page__info info-page">
+     <h2 class="info-page__title">My Info</h2>
+     <h3 class="info-page__sub-title">Add Address</h3>
+     <form class="info-page__form form-info" enctype="multipart/form-data" method="GET" action="#">
+      <div class="form-info__body">
+       <div class="form-info__item">
+        <label class="form-info__label" for="name">First Name*</label>
+        <input class="form-info__input" type="text" id="name" name="name" placeholder="First Name" autocomplete="on">
+       </div>
+       <div class="form-info__item">
+        <label class="form-info__label" for="last-name">Last Name*</label>
+        <input class="form-info__input" type="text" id="last-name" name="last-name" placeholder="Last Name"
+         autocomplete="on">
+       </div>
+       <div class="form-info__item">
+        <label class="form-info__label" for="country">Country / Region*</label>
+        <input class="form-info__input" type="text" id="country" name="country" placeholder="Country / Region"
+         autocomplete="on">
+       </div>
+       <div class="form-info__item">
+        <label class="form-info__label" for="company">Company Name</label>
+        <input class="form-info__input" type="text" id="company" name="company" placeholder="Company (optional)"
+         autocomplete="off">
+       </div>
+       <div class="form-info__item">
+        <label class="form-info__label" for="address">Street Address*</label>
+        <input class="form-info__input" type="text" id="address" name="address"
+         placeholder="House number and street name" autocomplete="on">
+       </div>
+       <div class="form-info__item">
+        <label class="form-info__label" for="apt">Apt, suite, unit</label>
+        <input class="form-info__input" type="text" id="apt" name="apt"
+         placeholder="apartment, suite, unit, etc. (optional)" autocomplete="on">
+       </div>
+       <div class="form-info__item">
+        <label class="form-info__label" for="city">City*</label>
+        <input class="form-info__input" type="text" id="city" name="city" placeholder="Town / City" autocomplete="on">
+       </div>
+       <div class="form-info__item">
+        <label class="form-info__label" for="state">State*</label>
+        <input class="form-info__input" type="text" id="state" name="state" placeholder="State" autocomplete="on">
+       </div>
+       <div class="form-info__item">
+        <label class="form-info__label" for="tel">Phone*</label>
+        <input class="form-info__input" type="tel" id="tel" name="tel" placeholder="Phone" autocomplete="on">
+       </div>
+       <div class="form-info__item">
+        <label class="form-info__label" for="tel">Postal Code*</label>
+        <input class="form-info__input" type="tel" id="postal" name="postal" placeholder="Postal Code"
+         autocomplete="on">
+       </div>
+       <div class="form-info__item--text-area">
+        <label class="form-info__label" for="delivery">Delivery Instruction</label>
+        <textarea class="form-info__del-text" id="delivery" name="delivery" placeholder="Delivery Instruction"
+         autocomplete="off"></textarea>
+       </div>
       </div>
-      <div class="form-info__item">
-       <label for="last-name">Last Name*</label>
-       <input type="text" id="last-name" name="last-name" placeholder="Last Name" autocomplete="on">
+      <div class="form-info__checks checks">
+       <div class="checks__checkbox checkbox">
+        <input type="checkbox" class="checkbox__input" id="check-shipping" name="shipping">
+        <label for="check-shipping" class="checkbox__label">Set as default shipping address</label>
+       </div>
+       <div class="form-info__checkbox checkbox">
+        <input type="checkbox" class="checkbox__input" id="check-billing" name="billing">
+        <label for="check-billing" class="checkbox__label">Set as default billing address</label>
+       </div>
       </div>
-      <div class="form-info__item">
-       <label for="country">Country / Region*</label>
-       <input type="text" id="country" name="country" placeholder="Country / Region" autocomplete="on">
+      <div class="form-info__btns btns">
+       <button class="btns__submit" type="submit">Save</button>
+       <button class="btns__reset" type="reset">Cancel</button>
       </div>
-      <div class="form-info__item">
-       <label for="company">Company Name</label>
-       <input type="text" id="company" name="company" placeholder="Company (optional)" autocomplete="off">
+     </form>
+    </div>
+    <div class="page__check check-page">
+     <h2 class="check-page__title">Check Out</h2>
+     <h3 class="check-page__sub-title">Billing Details</h3>
+     <form class="check-page__form form-check" enctype="multipart/form-data" method="GET" action="#">
+      <div class="form-check__body">
+       <div class="form-check__item">
+        <label class="form-check__label" for="name-out">First Name*</label>
+        <input class="form-check__input" type="text" id="name-out" name="name-out" placeholder="First Name"
+         autocomplete="on">
+       </div>
+       <div class="form-check__item">
+        <label class="form-check__label" for="last-name-out">Last Name*</label>
+        <input class="form-check__input" type="text" id="last-name-out" name="last-name-out" placeholder="Last Name"
+         autocomplete="on">
+       </div>
+       <div class="form-check__item">
+        <label class="form-check__label" for="country-out">Country / Region*</label>
+        <input class="form-check__input" type="text" id="country-out" name="country-out" placeholder="Country / Region"
+         autocomplete="on">
+       </div>
+       <div class="form-check__item">
+        <label class="form-check__label" for="company-out">Company Name</label>
+        <input class="form-check__input" type="text" id="company-out" name="company-out"
+         placeholder="Company (optional)" autocomplete="off">
+       </div>
+       <div class="form-check__item">
+        <label class="form-check__label" for="address-out">Street Address*</label>
+        <input class="form-check__input" type="text" id="address-out" name="address-out"
+         placeholder="House number and street name" autocomplete="on">
+       </div>
+       <div class="form-check__item">
+        <label class="form-check__label" for="apt-out">Apt, suite, unit</label>
+        <input class="form-check__input" type="text" id="apt-out" name="apt-out"
+         placeholder="apartment, suite, unit, etc. (optional)" autocomplete="on">
+       </div>
+       <div class="form-check__item2">
+        <label class="form-check__label" for="city-out">City*</label>
+        <input class="form-check__input" type="text" id="city-out" name="city-out" placeholder="Town / City"
+         autocomplete="on">
+       </div>
+       <div class="form-check__item2">
+        <label class="form-check__label" for="state-out">State*</label>
+        <input class="form-check__input" type="text" id="state-out" name="state-out" placeholder="State"
+         autocomplete="on">
+       </div>
+       <div class="form-check__item2">
+        <label class="form-check__label" for="postal-out">Postal Code*</label>
+        <input class="form-check__input" type="text" id="postal-out" name="postal-out" placeholder="Postal Code"
+         autocomplete="on">
+       </div>
       </div>
-      <div class="form-info__item">
-       <label for="address">Street Address*</label>
-       <input type="text" id="address" name="address" placeholder="House number and street name" autocomplete="on">
-      </div>
-      <div class="form-info__item">
-       <label for="apt">Apt, suite, unit</label>
-       <input type="text" id="apt" name="apt" placeholder="apartment, suite, unit, etc. (optional)" autocomplete="on">
-      </div>
-      <div class="form-info__item">
-       <label for="city">City*</label>
-       <input type="text" id="city" name="city" placeholder="Town / City" autocomplete="on">
-      </div>
-      <div class="form-info__item">
-       <label for="state">State*</label>
-       <input type="text" id="state" name="state" placeholder="State" autocomplete="on">
-      </div>
-      <div class="form-info__item">
-       <label for="tel">Phone*</label>
-       <input type="tel" id="tel" name="tel" placeholder="Phone" autocomplete="on">
-      </div>
-      <div class="form-info__item">
-       <label for="tel">Postal Code*</label>
-       <input type="tel" id="postal" name="postal" placeholder="Postal Code" autocomplete="on">
-      </div>
-      <div class="form-info__item--text-area">
-       <label for="delivery">Delivery Instruction</label>
-       <textarea id="delivery" name="delivery" placeholder="Delivery Instruction" autocomplete="off"></textarea>
-      </div>
-      <div class="form-info__checkbox checkbox">
-       <input type="checkbox" class="checkbox__input" id="check-shipping" name="shipping">
-       <label for="check-shipping" class="check-label">Set as default shipping address</label>
-      </div>
-      <div class="form-info__checkbox checkbox">
-       <input type="checkbox" class="checkbox__input" id="check-billing" name="billing">
-       <label for="check-billing" class="check-label">Set as default billing address</label>
-      </div>
-     </div>
-     <div class="form-info__btns">
-      <button type="submit">Save</button>
-      <button type="reset">Cancel</button>
-     </div>
-    </form>
+     </form>
+    </div>
    </div>
   </main>
-  <footer class="footer"></footer>
+  <footer class="footer">
+   <div class="footer__container">
+    Footer
+   </div>
+  </footer>
  </div>
 </body>
 
