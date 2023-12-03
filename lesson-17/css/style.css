@@ -81,14 +81,14 @@ body {
   height: 100%;
   aspect-ratio: 357/240;
   object-fit: cover;
-  transition: scale 0.3s;
+  transition: transform 0.3s;
 }
 .card__link-img {
   overflow: hidden;
 }
 @media (any-hover: hover) {
   .card__link-img:hover .card__image {
-    scale: 1.1;
+    transform: scale(1.1);
   }
 }
 .card__content {
@@ -213,12 +213,12 @@ body {
   height: 100%;
   aspect-ratio: 271/270;
   object-fit: cover;
-  transition: scale 0.3s;
+  transition: transform 0.3s;
 }
 @media (any-hover: hover) {
   .card-popular__link-img:hover .card-popular__image,
   .card-our__link-img:hover .card-our__image {
-    scale: 1.1;
+    transform: scale(1.1);
   }
 }
 .card-popular__title,
