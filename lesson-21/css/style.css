@@ -1320,7 +1320,7 @@ body {
 }
 @media (max-width: 1000px) {
   .zone__body {
-    color: #FFF;
+    color: #fff;
   }
 }
 @media (max-width: 380px) {
@@ -1392,7 +1392,7 @@ body {
   width: 100%;
   text-align: center;
   border-radius: 4px;
-  border: 1px solid #3C4242;
+  border: 1px solid #3c4242;
   padding: 8px 16px;
   font-family: "Causten", sans-serif;
   font-size: 12px;
@@ -1401,11 +1401,11 @@ body {
   transition: all 0.3s;
 }
 .zone__button--white {
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
 }
 @media (max-width: 1000px) {
   .zone__button {
-    border: 1px solid #FFFFFF;
+    border: 1px solid #ffffff;
   }
 }
 @media (any-hover) {
@@ -1416,9 +1416,9 @@ body {
 }
 .zone__limited {
   border-radius: 4px;
-  background: #3C4242;
+  background: #3c4242;
   padding: 8px 16px;
-  color: #FFF;
+  color: #fff;
   font-family: "Causten", sans-serif;
   font-size: 12px;
   font-weight: 700;
@@ -1545,7 +1545,7 @@ body {
   }
 }
 .fashion__title {
-  color: #FFF;
+  color: #fff;
   font-size: 34px;
   font-weight: 800;
   line-height: 1.47;
@@ -1570,7 +1570,7 @@ body {
   }
 }
 .fashion__text {
-  color: #FFF;
+  color: #fff;
   font-family: "Causten", sans-serif;
   font-size: 20px;
   font-weight: 300;
@@ -1596,9 +1596,9 @@ body {
 }
 .fashion__link a {
   border-radius: 8px;
-  background: #FFF;
+  background: #fff;
   padding: 12px 44px;
-  color: #3C4242;
+  color: #3c4242;
   font-family: "Causten", sans-serif;
   font-size: 18px;
   font-weight: 600;
@@ -1701,7 +1701,7 @@ body {
   row-gap: 4px;
 }
 .men__label {
-  color: #2A2F2F;
+  color: #2a2f2f;
   font-family: "Causten", sans-serif;
   font-size: 17.875px;
   font-weight: 700;
@@ -1713,7 +1713,7 @@ body {
   text-decoration: underline;
 }
 .men__text {
-  color: #7F7F7F;
+  color: #7f7f7f;
   font-family: "Causten", sans-serif;
   font-size: 13.407px;
   font-weight: 500;
@@ -1822,7 +1822,7 @@ body {
   row-gap: 4px;
 }
 .women__label {
-  color: #2A2F2F;
+  color: #2a2f2f;
   font-family: "Causten", sans-serif;
   font-size: 17.875px;
   font-weight: 700;
@@ -1834,7 +1834,7 @@ body {
   text-decoration: underline;
 }
 .women__text {
-  color: #7F7F7F;
+  color: #7f7f7f;
   font-family: "Causten", sans-serif;
   font-size: 13.407px;
   font-weight: 500;
@@ -1855,7 +1855,7 @@ body {
 }
 
 .brands__container {
-  background: #3C4242;
+  background: #3c4242;
   padding-top: 44px;
   padding-bottom: 60px;
 }
@@ -1866,7 +1866,7 @@ body {
   }
 }
 .brands__titile {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-size: 50px;
   font-weight: 800;
@@ -1880,13 +1880,13 @@ body {
   }
 }
 .brands__sub-titile {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: "Causten", sans-serif;
   font-size: 22px;
 }
 .brands__sub-titile span {
-  color: #FBD103;
+  color: #fbd103;
   font-family: "Causten", sans-serif;
   font-size: 22px;
   font-weight: 700;
@@ -1921,7 +1921,7 @@ body {
 .brands__card {
   min-width: 178px;
   min-height: 86px;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 12px;
   padding: 10px;
   display: -webkit-box;
@@ -2007,7 +2007,7 @@ body {
   right: 21px;
   max-width: 32px;
   max-height: 32px;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 50%;
 }
 .women2__link-heart {
@@ -2062,7 +2062,7 @@ body {
   text-decoration: underline;
 }
 .women2__text {
-  color: #807D7E;
+  color: #807d7e;
   font-family: Causten;
   font-size: 14px;
   font-weight: 500;
@@ -2077,7 +2077,7 @@ body {
           flex: 0 0 auto;
   min-width: 82px;
   min-height: 37px;
-  background: #F6F6F6;
+  background: #f6f6f6;
   border-radius: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2135,7 +2135,7 @@ body {
   row-gap: 20px;
   max-width: 400px;
   border-radius: 10px;
-  border: 1.8px solid #BEBCBD;
+  border: 1.8px solid #bebcbd;
 }
 .feedback__top {
   display: -webkit-box;
@@ -2192,22 +2192,22 @@ body {
   margin-bottom: 20px;
 }
 .feedback__text {
-  color: #807D7E;
+  color: #807d7e;
   font-family: "Causten", sans-serif;
   font-size: 14px;
   letter-spacing: 0.28px;
 }
 
 .footer {
-  background: #3C4242;
+  background: #3c4242;
 }
 .footer__container {
   padding: 59px 85px 59px 75px;
-  color: #F6F6F6;
+  color: #f6f6f6;
 }
 @media (max-width: 500px) {
   .footer__container {
-    padding: 20px;
+    padding: 15px;
   }
 }
 .footer__columns {
@@ -2228,7 +2228,7 @@ body {
 }
 @media (max-width: 720px) {
   .footer__columns {
-    grid-template-columns: repeat(2, minmax(162px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     -webkit-column-gap: 40px;
        -moz-column-gap: 40px;
             column-gap: 40px;
@@ -2237,9 +2237,9 @@ body {
 }
 @media (max-width: 500px) {
   .footer__columns {
-    -webkit-column-gap: 10px;
-       -moz-column-gap: 10px;
-            column-gap: 10px;
+    -webkit-column-gap: 5px;
+       -moz-column-gap: 5px;
+            column-gap: 5px;
   }
 }
 .footer__column {
@@ -2273,7 +2273,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  row-gap: 5px;
 }
 .footer__linklist {
   font-family: "Causten", sans-serif;
@@ -2283,7 +2282,7 @@ body {
 }
 @media (max-width: 500px) {
   .footer__linklist {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 @media (any-hover) {
@@ -2293,6 +2292,11 @@ body {
 }
 .footer__column--big {
   grid-column: span 2;
+}
+@media (max-width: 500px) {
+  .footer__column--big {
+    grid-column: span 1;
+  }
 }
 .footer__socials {
   display: -webkit-box;
@@ -2352,7 +2356,7 @@ body {
   overflow: hidden;
 }
 .footer__icons-link {
-  color: #2A2F2F;
+  color: #2a2f2f;
   font-size: 17.088px;
   font-weight: 700;
   line-height: 1.66;
@@ -2406,8 +2410,8 @@ body {
   font-size: 28.579px;
   font-weight: 700;
   line-height: 2;
-  border-top: 1px solid #BEBCBD;
-  border-bottom: 1px solid #BEBCBD;
+  border-top: 1px solid #bebcbd;
+  border-bottom: 1px solid #bebcbd;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2449,7 +2453,7 @@ body {
           align-items: center;
 }
 .footer__copy {
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: "Causten", sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -2494,7 +2498,7 @@ body {
   font-size: 10px;
 }
 .google__title {
-  color: #FFF;
+  color: #fff;
   font-family: "Causten", sans-serif;
   font-size: 18px;
   line-height: 1.5;
@@ -2534,7 +2538,7 @@ body {
   font-size: 10px;
 }
 .apple__title {
-  color: #FFF;
+  color: #fff;
   font-family: "Causten", sans-serif;
   font-size: 18px;
   line-height: 1.5;
