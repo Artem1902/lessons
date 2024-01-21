@@ -1442,6 +1442,11 @@ body {
 
   &__card {
     min-height: 100%;
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     & a {
       overflow: hidden;
     }
@@ -1450,6 +1455,7 @@ body {
       height: 100%;
       aspect-ratio: 430 / 492;
       object-fit: cover;
+      object-position: center;
       transition: transform 0.3s;
       @media (any-hover) {
         &:hover {
@@ -2333,7 +2339,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100%;
-    white-space: wrap;
     @media (max-width: toRem(550)) {
       flex: 0 0 100%;
       padding: toRem(20) toRem(15);

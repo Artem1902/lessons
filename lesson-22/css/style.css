@@ -2068,6 +2068,16 @@ body {
 }
 .projects__card {
   min-height: 100%;
+  min-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .projects__card a {
   overflow: hidden;
@@ -2078,6 +2088,8 @@ body {
   aspect-ratio: 430/492;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
@@ -3295,7 +3307,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 100%;
-  white-space: wrap;
 }
 @media (max-width: 34.375rem) {
   .footer__column--form {
