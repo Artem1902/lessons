@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon-32x32.png" type="image/x-icon">
+    <title>Task 1</title>
+    <style>
+
+    </style>
+</head>
+
+<h1>Task #1</h1>
+<h4><a href="../index.html">Back</a></h4>
+
+<script>
+
+    // Задача 1. Дано масив рядків. Вивести ті, у яких є цифри (використати метод test та регулярні вирази).
+    // const arr = ['aaaa', 'bbb3aaa', 'ccc2ccc', 'dddd']
+    // arr.forEach(element => {
+    //     if (/\d/.test(element)) document.write(`${element} <br>`)
+    // });
+
+    // Задача 2. Дано масив рядків. Вивести ті, у яких немає цифр.
+    // const arr = ['aaaa', 'bbb3aaa', 'ccc2ccc', 'dddd']
+    // arr.forEach(element => {
+    //     if (!/[0-9]/.test(element)) document.write(`${element}<br>`)
+
+    // });
+
+    // Задача 3. Дано масив рядків. Вивести ті, у яких є голосні літери.
+    // const arr = ['aaaa', 'bbb3aaa', 'ccc2ccc', 'dddAd']
+    // arr.forEach(element => {
+    //     if (/[aeiou]/i.test(element)) document.write(`${element}<br>`)
+    // });
+
+    // Задача 4. Дано масив рядків. Вивести ті, у яких немає голосних літер.
+    // const arr = ['aAaa', 'Bbb3aaa', 'ccc2ccc', 'dOddd']
+    // arr.forEach(element => {
+    //     if (!/[aeiou]/i.test(element)) document.write(`${element}<br>`)
+    // });
+    // Задача 5. Дано масив рядків. Вивести ті, у яких є або цифра 1 або цифра 3.
+    // const arr = ['aAaa', 'Bbb3aaa', 'ccc2ccc', 'dOddd']
+    // arr.forEach(element => {
+    //     if (/[1,3]/.test(element)) document.write(`${element}<br>`)
+    // });
+    // Задача 6. Дано рядок тексту, вивести усі числа, які є у тексті.
+    // const arr = ['aAaa', 'Bbb3aaa', 'ccc2ccc', 'dOddd']
+    // arr.forEach(element => {
+    //     if (/\d/.test(element)) document.write(element.match(/\d/g))
+    //     document.write(`<br>`)
+    // }
+    // );
+    // Задача 7. Дано рядок тексту. Знайти усі знаки пунктуації, які були використано.
+    // let text = 'The sky was filled with stars; countless twinkling lights illuminated the night. Suddenly, a shooting star streaked across the sky, leaving a trail of brilliance behind.'
+
+    // if (/\W/.test(text)) document.write(text.match(/\W/g))
+    // Задача 8. Дано рядок тексту. Вивести усі складові, які розділені розділовими знаками.
+    // let text = 'The sky was filled with stars; countless twinkling lights illuminated the night. Suddenly, a shooting star streaked across the sky, leaving a trail of brilliance behind.'
+
+    // const newText = text.split(/[,\.;]/)
+    // newText.forEach(el => document.write(`${el}<br>`))
+
+    // Задача 9. Дано рядок тексту. Перевірити, чи містить він дату у форматі dd.mm.yyyy (dd- день, mm- місяць, yyyy- рік).
+    // let text = 'The sky was filled with stars; countless twinkling lights illuminated the night. Suddenly, a shooting star 01.01.1990. streaked across the sky, leaving a trail of brilliance behind.'
+
+    // if (/\b\d{2}.\d{2}.\d{4}\b/.test(text)) document.write(text.match(/\b\d{2}.\d{2}.\d{4}\b/g))
+    // Задача 10. Дано рядок тексту. Підрахувати кількість двоцифрових чисел у рядку.
+    // let text = 'The sky was filled with stars; countless twinkling lights illuminated the night. Suddenly, a shooting star 01.01.1990. streaked across the sky, leaving a trail of brilliance behind.'
+
+    // let num = text.match(/\b\d{2}\b/g).length
+    // document.write(`Numbers with 2 digits - ${num}.`)
+    // Задача 11. Визначити чи може бути рядок тексту номером банківської картки (приклад: «4142-3433-2323-3434»). Знайти усі такі номери.
+    // const text = "During his travels, John often used his credit card for various purchases. One of his cards, with the number 4532-7598-1234-5678, was especially useful for booking hotels and flights. Despite the occasional inconvenience, such as when the card was declined in a remote village, it was overall a reliable companion. In case of issues, John would call the bank's support line at 1"
+
+    // const matches = text.match(/\b\d{4}-\d{4}-\d{4}-\d{4}\b/g)
+    // console.log(matches)
+    // const res = matches ? matches : 'No matches'
+    // document.write(res)
+    // Задача 12. Дано адресу сайту. Визначити, чи є він урядовим (містить домен “gov”)
+    // const text = 'www.example.gov'
+
+    // if (text.endsWith('.gov')) document.write('goverment')
+    // else document.write('public')
+
+    // Задача 13. Вибрати усі роки після 2021 року з отриманого повідомлення
+    // let myText = 'aaaa 2000 bbbbb 2024 ccccc 2030 vvvv 2029 ff 2100 3000'
+
+    // const res = myText.match(/\b([2-9]\d[2-9]\d|[2-9][1-9]\d{2}|[3-9]\d{3})\b/g)
+
+    // document.write(res)
+
+    // let myText = 'aaaa 2000 bbbbb 2024 ccccc 2030 vvvv 2029 ff 2100';
+    // const res = myText.match(/\b(?:20[2-9]\d|2[1-9]\d{2})\b/g);
+
+    // document.write(res);
+
+    // Задача 14. Дано номер телефону. Перевірити, чи є цей телефон телефоном з України (починаєтсья на «+38»)
+    // const text = '+380501111111'
+    // if (text.startsWith('+38')) document.write('Ukraine')
+    // else document.write('Another country')
+    // Задача 15. Користувач вводить прізвище та ім’я в одному рядку через пробіл.  Замінити пробіл на дефіс.
+    // const name = 'Ivanov Ivan'
+    // const res = name.replace(' ', '-')
+    // document.write(res)
+    // Задача 16. Користувач вводить дату у форматі «день.місяць.рік». Отримати рядкове представлення дати у форматі «день/місяць/рік»
+    // const date = '10.10.1990'
+    // const res = date.replaceAll('.', '/')
+    // document.write(res)
+    // Задача 17. Користувач вводить день (номер дня (0-6) або «sun,mon,tue,wed,thu,fri,sat»). Визначити, чи  є це день вихідним
+    // const date = prompt('Day?')
+    // if (/(sun|sat|6|0)/g.test(date)) document.write('Weekend')
+    // else document.write('Working day')
+
+</script>
+
+</html>
